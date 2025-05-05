@@ -2,14 +2,14 @@
 
 :root {
     --background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0c7b2fab-3e79-4723-8407-219ee0f2640c/dji6nkg-91ba2262-fae5-4b50-8bcd-c983187d68cf.jpg/v1/fill/w_1192,h_670,q_70,strp/ayla___old_car_jdm_by_tiotork_dji6nkg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMGM3YjJmYWItM2U3OS00NzIzLTg0MDctMjE5ZWUwZjI2NDBjXC9kamk2bmtnLTkxYmEyMjYyLWZhZTUtNGI1MC04YmNkLWM5ODMxODdkNjhjZi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.aNoag6iWqR5wgvUhq8Wwzh71K39lV9mp9S2rNc1SHoQ");
-	--loadinglogo: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png);    
+	--loading-image: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png);    
 	--main: rgb(19, 12, 18);
     --border: rgb(91, 91, 91);
     --heading: rgba(193, 176, 178, 0.03);
     --text: rgba(47, 35, 37, 0.112);
     --primary: rgb(255, 47, 82);
     --secondary: rgb(144, 102, 165);
-    --loadintime: 6s;
+    --loadintime: 4s;
 }
 
 * {
@@ -37,7 +37,8 @@
         content: "";
         inset: 0;
         background: var(--background-image) center / 40% !important;
-        opacity: .3;
+        filter: brightness(90%) contrast(80%);
+        opacity: 1;
         z-index: -2;
     }
 
@@ -45,8 +46,10 @@
         position: absolute;
         content: "";
         inset: 0;
-        background: -webkit-radial-gradient(circle, transparent 15%, rgb(14, 10, 14)) !important;
+        /* background: -webkit-radial-gradient(circle, transparent 15%, rgb(14, 10, 14)) !important; */
+        mask: radial-gradient(25% 40%, transparent, transparent, red) !important;
         opacity: 1;
+        backdrop-filter: blur(2px) sepia(20%) brightness(50%);
         z-index: -1;
     }
 }
@@ -300,7 +303,6 @@
 
 /* Panel style */
 .actionButtons_e131a9 > *, .buttons__37e49 .button__67645 {
-    border-bottom: inset 1px var(--main) !important;
     transition: .3s !important;
 }
 
@@ -374,7 +376,7 @@
     background: var(--heading) !important;
     margin: 0;
     padding-left: 10px;
-    border-left: var(--primary) solid 3px !important;
+    border-left: var(--primary) solid 2px !important;
     transition: .3s;
 }
 
@@ -560,11 +562,11 @@
 }
 
 .themed_b3f026 {
-    border-left: var(--primary) solid 3px !important;
+    border-left: var(--primary) solid 2px !important;
 }
 
 .button__201d5 {
-    border-bottom: var(--primary) solid 3px !important;
+    border-bottom: var(--primary) solid 1px !important;
 }
 
 .themed_b3f026:hover, .button__201d5:hover {
@@ -718,7 +720,7 @@ body::after {
     left: 50%;
     width: 400px;
     height: 400px;
-    background: var(--loadinglogo) center no-repeat !important;
+    background: var(--loading-image) center no-repeat !important;
     transform: translate(-50%, -100%);
     z-index: 151;
     content: "Loading Theme";
@@ -790,7 +792,7 @@ body::after {
     }
 }
 
-.tooltipPrimary__382e7:has(.guildNameTextLimitedSize_b1f768), .vc-notification {
+.tooltipPrimary__382e7, .vc-notification {
     background: var(--heading) !important;
     backdrop-filter: blur(10px) !important;
     border-bottom: solid 1px var(--primary) !important;
@@ -896,4 +898,26 @@ body::after {
 .expressionPickerPositionLayer__74017 {
     transition: all none;
     animation: all none;
+}
+
+.container_b7e1cb {
+    margin: 2px 0 0 75px;
+    padding: 0;
+    background: var(--heading) !important;
+}
+
+.inner__74017 {
+    align-items: center;
+
+    .buttons__74017 {
+        align-self: flex-end;
+    }
+}
+
+.form_f75fb0 .characterCount__795fb {
+    top: 10px;
+    bottom: unset !important;
+    background: var(--heading) !important;
+    border-right: 1px solid var(--primary) !important;
+    backdrop-filter: blur(10px);
 }
