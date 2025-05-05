@@ -1,6 +1,7 @@
 # Mystic Theme V1
 A theme that has custom background feature.
 
+![Uploading repository-open-graph-template.png…]()
 ![image](https://github.com/user-attachments/assets/c8f93f61-81b9-49b8-a94e-1434124be0b9)
 ![image](https://github.com/user-attachments/assets/459aecb5-54f4-48ed-9def-b99a030b354b)
 ![image](https://github.com/user-attachments/assets/9a6c2577-1f18-4107-9e3c-0c01861c2c53)
