@@ -717,7 +717,7 @@ body::after {
     left: 50%;
     width: 400px;
     height: 400px;
-    background: url(logo.png) center no-repeat !important;
+    background: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png) center no-repeat !important;
     transform: translate(-50%, -100%);
     z-index: 151;
     content: "Loading Theme";
