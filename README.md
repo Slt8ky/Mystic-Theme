@@ -1,5 +1,5 @@
 # Mystic Theme V1
-A theme that has custom background feature, transparentcy mode are supported.
+A theme that has custom background feature.
 
 ![image](https://github.com/user-attachments/assets/c8f93f61-81b9-49b8-a94e-1434124be0b9)
 ![image](https://github.com/user-attachments/assets/459aecb5-54f4-48ed-9def-b99a030b354b)
