@@ -16,7 +16,7 @@
     --text: rgba(47, 35, 37, 0.112);
     --primary: rgb(255, 47, 82);
     --secondary: rgb(144, 102, 165);
-    --loadintime: 0s;
+    --loadintime: 3s;
 }
 
 .appAsidePanelWrapper_a3002d {
@@ -49,7 +49,35 @@
     background-color: transparent !important;
     border: unset !important;
     border-radius: unset !important;
-    mask: none !important;
+}
+
+foreignObject {
+    mask: none;
+}
+
+
+
+
+.wrapper__44b0c {
+    rect {
+        display: none;
+    }
+    &:has(rect[fill="#ca9654"]) {
+        box-shadow: 0 0 1px 2px #fff839, 0 0 5px #ffc880 !important;
+    }
+    &:has(rect[fill="#82838b"]) {
+        box-shadow: 0 0 1px 2px #a4a4a4, 0 0 5px #d0d2e2 !important;
+    }
+    &:has(rect[fill="#43a25a"]) {
+        box-shadow: 0 0 1px 2px #64f789, 0 0 5px #91ffac !important;
+    }
+    &:has(rect[fill="#d83a42"]) {
+        box-shadow: 0 0 1px 2px #ff6a71, 0 0 5px #ffcbce !important;
+    }
+}
+
+.userInfo__0a06e {
+    padding: 10px;
 }
 
 .children__9293f::after, .sidebar_c48ade::after {
@@ -201,7 +229,6 @@
     margin: 0;
     margin-left: 20px;
     border-radius: 0px;
-    box-shadow: 0 0 1px 2px var(--border);
 }
 
 .header_c19a55 {
@@ -955,5 +982,24 @@ body::after {
 
     .tabBarItem_d1d9f3::after {
         display: none;
+    }
+}
+
+.callAvatarMaskContainer_f910d0 {
+    .svg__2338f {
+        filter: brightness(70%);
+        transition: filter .2s !important;
+    }
+    .border_f910d0 {
+        transition: box-shadow .2s !important;
+    }
+
+    &:has(.speaking_f910d0) {
+        .svg__2338f {
+            filter: brightness(100%);
+        }
+        .border_f910d0 {
+            box-shadow: 0 0 1px 1px var(--primary), 0 0 10px var(--primary) !important;
+        }
     }
 }
