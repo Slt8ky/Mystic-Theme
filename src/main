@@ -12,23 +12,6 @@
     --loadintime: 4s;
 }
 
-* {
-    font-family: "Nunito", "LXGW WenKai TC", cursive;
-    background-color: transparent !important;
-    border: unset !important;
-    border-radius: unset !important;
-}
-
-.children__9293f::after, .sidebar_c48ade::after {
-    display: none;
-}
-
-/* Fixed emoji icon button */
-.spriteGreyscale__04eed {
-    background-color: var(--interactive-normal) !important;
-    color: var(--primary) !important;
-}
-
 .appAsidePanelWrapper_a3002d {
     position: relative;
 
@@ -52,6 +35,23 @@
         backdrop-filter: blur(2px) sepia(20%) brightness(50%);
         z-index: -1;
     }
+}
+
+* {
+    font-family: "Nunito", "LXGW WenKai TC", cursive;
+    background-color: transparent !important;
+    border: unset !important;
+    border-radius: unset !important;
+}
+
+.children__9293f::after, .sidebar_c48ade::after {
+    display: none;
+}
+
+/* Fixed emoji icon button */
+.spriteGreyscale__04eed {
+    background-color: var(--interactive-normal) !important;
+    color: var(--primary) !important;
 }
 
 /* Fixed left side layout */
