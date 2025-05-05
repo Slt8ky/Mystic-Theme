@@ -27,7 +27,7 @@
         content: "";
         inset: 0;
         background: var(--background-image) center / 40% !important;
-        filter: brightness(90%) contrast(80%);
+        filter: brightness(40%) contrast(60%);
         opacity: 1;
         z-index: -2;
     }
@@ -49,6 +49,7 @@
     background-color: transparent !important;
     border: unset !important;
     border-radius: unset !important;
+    mask: none !important;
 }
 
 .children__9293f::after, .sidebar_c48ade::after {
@@ -893,9 +894,17 @@ body::after {
     margin: 10px 0 !important;
 }
 
-.inline, .drawerSizingWrapper__08434 {
+.inline, .drawerSizingWrapper__08434, .tile_d6271c {
     background: var(--heading) !important;
     border-bottom: solid 1px var(--primary) !important;
+}
+
+.row_d6271c {
+    gap: 9px;
+
+    button {
+        background: var(--heading) !important;
+    }
 }
 
 .drawerSizingWrapper__08434 {
