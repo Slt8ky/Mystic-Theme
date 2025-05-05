@@ -3,7 +3,8 @@
 
 :root {
     --background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0c7b2fab-3e79-4723-8407-219ee0f2640c/dji6nkg-91ba2262-fae5-4b50-8bcd-c983187d68cf.jpg/v1/fill/w_1192,h_670,q_70,strp/ayla___old_car_jdm_by_tiotork_dji6nkg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMGM3YjJmYWItM2U3OS00NzIzLTg0MDctMjE5ZWUwZjI2NDBjXC9kamk2bmtnLTkxYmEyMjYyLWZhZTUtNGI1MC04YmNkLWM5ODMxODdkNjhjZi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.aNoag6iWqR5wgvUhq8Wwzh71K39lV9mp9S2rNc1SHoQ");
-    --main: rgb(19, 12, 18);
+	--loadinglogo: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png);    
+	--main: rgb(19, 12, 18);
     --border: rgb(91, 91, 91);
     --heading: rgba(193, 176, 178, 0.03);
     --text: rgba(47, 35, 37, 0.112);
