@@ -1,7 +1,7 @@
 /**
- * @name Mystic-Theme
+ * @name Mystic-theme
  * @author Slt8ky
- * @description Mystic-Theme
+ * @description Mystic-theme
  * @version 0.0.1
  */
 
@@ -16,7 +16,7 @@
     --text: rgba(47, 35, 37, 0.112);
     --primary: rgb(255, 47, 82);
     --secondary: rgb(144, 102, 165);
-    --loadintime: 4s;
+    --loadintime: 0s;
 }
 
 .appAsidePanelWrapper_a3002d {
@@ -429,8 +429,8 @@
 
 .focusLock__49fc1 {
     background: var(--heading) !important;
-    border-top: inset 2px var(--primary) !important;
-    border-bottom: inset 2px var(--primary) !important;
+    border-top: inset 1px var(--primary) !important;
+    border-bottom: inset 1px var(--primary) !important;
 }
 
 .layerContainer_da8173 {
@@ -466,11 +466,14 @@
 }
 
 /* more card style */
-.vc-addon-card, .container__0d850, .container__87bf1, .vc-m-bottom-20, .inner__74017 {
+.vc-addon-card, .container__0d850, .container__87bf1, .inner__74017, .section_bf424d {
     background: var(--heading) !important;
     border-bottom: solid 1px var(--primary) !important;
 }
 
+.section_bf424d {
+    padding: 10px;
+}
 .button__67645 {
     width: 28px;
     height: 28px !important;
@@ -927,4 +930,21 @@ body::after {
     background: var(--heading) !important;
     border-right: 1px solid var(--primary) !important;
     backdrop-filter: blur(10px);
+}
+
+.container_d1d9f3 .tabBar_d1d9f3 {
+    border-bottom: solid 1px var(--primary) !important;
+    padding-bottom: 30px;
+    gap: 5px;
+
+    .tabBarItem_d1d9f3 {
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .tabBarItem_d1d9f3::after {
+        display: none;
+    }
 }
