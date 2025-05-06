@@ -27,7 +27,7 @@
         content: "";
         inset: 0;
         background: var(--background-image) center / 40% !important;
-        filter: brightness(40%) contrast(60%);
+        filter: brightness(80%) contrast(60%);
         opacity: 1;
         z-index: -2;
     }
@@ -37,7 +37,7 @@
         content: "";
         inset: 0;
         /* background: -webkit-radial-gradient(circle, transparent 15%, rgb(14, 10, 14)) !important; */
-        mask: radial-gradient(25% 20%, transparent, red 70%) !important;
+        mask: radial-gradient(35% 25%, transparent, red) !important;
         opacity: 1;
         backdrop-filter: blur(2px) sepia(20%) brightness(50%);
         z-index: -1;
