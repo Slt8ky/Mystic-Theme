@@ -16,7 +16,7 @@
     --text: rgba(47, 35, 37, 0.112);
     --primary: rgb(255, 47, 82);
     --secondary: rgb(144, 102, 165);
-    --loadintime: 4s;
+    --loadintime: 3s;
 }
 
 .appAsidePanelWrapper_a3002d {
@@ -94,6 +94,9 @@ foreignObject {
 
 .panels_c48ade {
     position: unset !important;
+    .panel__5dec7 {
+        background: var(--heading) !important;
+    }
 }
 
 .wrapper_ef3116 {
@@ -445,14 +448,8 @@ foreignObject {
     background: var(--heading) !important;
 }
 
-.didRender_faf9c0 {
-    position: relative;
-    overflow: visible;
-    border-top: inset 2px var(--primary) !important;
-    border-bottom: inset 2px var(--primary) !important;
-}
-
-.focusLock__49fc1 {
+.modal_ac72c6 {
+    box-shadow: unset !important;
     background: var(--heading) !important;
     border-top: inset 1px var(--primary) !important;
     border-bottom: inset 1px var(--primary) !important;
@@ -467,14 +464,8 @@ foreignObject {
     backdrop-filter: blur(10px);
 }
 
-.didRender_faf9c0::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--heading);
-    backdrop-filter: blur(10px);
-    filter: blur(10px);
-    z-index: -1;
+.streamPreviewWrapper__6da2d {
+    padding: 0;
 }
 
 .tabBarItem_d1d9f3::after {
@@ -542,6 +533,45 @@ foreignObject {
     box-shadow: 0 0 10px rgb(119, 255, 130);
 }
 
+.bd-addon-list {
+
+    .bd-addon-card {
+        background: var(--heading) !important;
+        border-bottom: solid 1px var(--primary) !important;
+    }
+
+    .bd-switch {
+        position: relative;
+        height: 27px;
+        background: var(--heading) !important;
+        border-bottom: solid 1px var(--primary) !important;
+        width: 44px;
+    }
+
+    .bd-switch-body {
+        visibility: hidden;
+    }
+    
+    .bd-switch::before, .bd-switch-checked::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 70%;
+        width: 3px;
+        transform: translateY(-50%);
+        background: rgb(255, 64, 64) !important;
+        box-shadow: 0 0 10px rgb(255, 64, 64);
+        content: "";
+        transition: .3s;
+    }
+
+    .bd-switch-checked::before {
+        left: calc(100% - 3px);
+        background: rgb(119, 255, 130) !important;
+        box-shadow: 0 0 10px rgb(119, 255, 130);
+    }
+}
+
 .popout__3f413 {
     position: relative;
     background: var(--heading) !important;
@@ -571,6 +601,7 @@ foreignObject {
     position: relative;
     background: var(--heading) !important;
     animation: moveX .5s;
+    box-shadow: unset;
 }
 
 .menu_c1e9c4::before {
@@ -598,10 +629,12 @@ foreignObject {
 
 .themed_b3f026 {
     border-left: var(--primary) solid 2px !important;
+    transition: .3s !important;
 }
 
 .button__201d5 {
     border-bottom: var(--primary) solid 1px !important;
+    transition: .3s !important;
 }
 
 .themed_b3f026:hover, .button__201d5:hover {
@@ -1035,4 +1068,149 @@ body::after {
             line-height: calc(var(--height) - 29px);
         }
     }
+}
+
+.layer_da8173 .outer_c0bea0 {
+    position: relative;
+    &::before {
+        position: absolute;
+        inset: 0;
+        backdrop-filter: blur(10px);
+        content: "";
+        z-index: -1;
+        border-bottom: solid 1px var(--primary) !important;
+    }
+
+    .role_dfa8b6 {
+        position: relative;
+        padding: 0px;
+        background: var(--heading) !important;
+        border-bottom: solid 1px var(--primary) !important;
+
+        >:first-child {
+            margin: 0px !important;
+            display: flex;
+            align-items: center;
+            background: var(--primary) !important;
+            margin: 0px;
+            height: 100%;
+        }
+        >div:nth-of-type(2) {
+            padding: 0 4px !important;
+        }
+        .roleRemoveButtonCanRemove_dfa8b6 {
+            height: 100%;
+            width: 24px;
+        }
+        .roleCircle__4f569 {
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        svg {
+            display: block;
+            path {
+                fill: white;
+            }
+        }
+    }
+}
+
+.inner_c0bea0 {
+    background: var(--heading) !important;
+    border-bottom: 1px solid var(--primary) !important;
+}
+.content__99f8c {
+    --moveX: -100px;
+    animation: moveX 1s,fade-in 1s;
+
+    .friendsButtonContainer__35e86 .channel__972a0 {
+        padding: 0;
+        margin: 0;
+        width: 316px;
+    }
+
+    > *:nth-child(2) .interactive_bf202d, > *:nth-child(3), > *:nth-child(4) {
+        margin: 3px;
+        background: var(--heading) !important;
+        border-left: 1px solid var(--primary) !important;
+        transition: .3s;
+
+        &:hover {
+            background: var(--primary) !important;
+            box-shadow: 0 0 10px var(--primary); 
+        }
+    }
+
+    > .sectionDivider__35e86 {
+        display: none;
+    }
+
+    > .container__675e5 {
+        display: none;
+    }
+
+    > .privateChannelsHeaderContainer__99e7c {
+        margin-top: 10px;
+    }
+
+    > h2 ~ li {
+        margin: 3px;
+        background: var(--heading) !important;
+        border-left: 1px solid var(--primary) !important;
+        transition: .3s;
+    }
+
+    > h2 ~ li:hover {
+        background: var(--primary) !important;
+        box-shadow: 0 0 10px var(--primary);
+    }
+}
+
+.tabBar__133bf {
+    padding: 10px;
+}
+
+.container__7d20c .scroller__7d20c {
+    height: auto;
+    background: var(--heading) !important;
+    border-left: 1px solid var(--primary) !important;
+    padding-bottom: 8px;
+    
+    > .itemCard__7e549 {
+        background: var(--heading) !important;
+        border-bottom: 1px solid var(--primary) !important;
+    }
+}
+
+.wrapper__70f7f .innerWrapperV1__70f7f {
+    position: relative;
+    background: var(--heading) !important;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+}
+
+.applicationStore_f07d62 .container_c880e8 > svg {
+    display: none;
+}
+
+.icons__07f91 .live_a7acae, .pictureInPicture__6341f .pictureInPictureWindow__6341f {
+    background: var(--heading) !important;
+    border-bottom: solid 1px var(--primary) !important;
+}
+
+.pictureInPicture__6341f .pictureInPictureWindow__6341f {
+    box-shadow: 0 0 20px black;
+    backdrop-filter: blur(10px);
+}
+
+.pictureInPictureVideo_e4cb9a {
+    box-shadow: unset !important;
+}
+
+.scroller__99e7c {
+    margin: 0 !important;
 }
