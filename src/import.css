@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --background-image: url(https://i.ibb.co/JRDVL3mT/PHONK-MIX-FOR-NIGHT-DRIVE-BEST-LXST-CXNTURY-TYPE-3-HOUR-CAR-MUSIC-2025-1-59-3-screenshot.png);
+    --background-image: "";
 	--loading-image: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png);    
 	--main: rgb(19, 12, 18);
     --border: rgb(91, 91, 91);
@@ -16,7 +16,66 @@
     --text: rgba(47, 35, 37, 0.112);
     --primary: rgb(255, 47, 82);
     --secondary: rgb(144, 102, 165);
-    --loadintime: 4s;
+    --loadintime: 0s;
+
+    .appAsidePanelWrapper_a3002d {
+        position: relative;
+
+        /* Present 1 */
+        /* &::before {
+            background: url(https://i.ibb.co/JRDVL3mT/PHONK-MIX-FOR-NIGHT-DRIVE-BEST-LXST-CXNTURY-TYPE-3-HOUR-CAR-MUSIC-2025-1-59-3-screenshot.png) center / 40% !important;
+            filter: brightness(60%) contrast(65%);
+        }
+
+        &::after {
+            mask: radial-gradient(25% 25%, transparent, red) !important;
+            backdrop-filter: sepia(20%) brightness(50%);
+        } */
+
+        /* Present 2 */
+        /* &::before {
+            background: url(https://i.ibb.co/TB40hVV0/b1.jpg) center / cover !important;
+            filter: brightness(66%) contrast(130%);
+        }
+
+        &::after {
+            mask: radial-gradient(25% 25%, transparent, red) !important;
+            backdrop-filter: sepia(20%) brightness(30%);
+        } */
+
+        /* Present 3 */
+        &::before {
+            background: url(https://i.ibb.co/LzbtHG8c/thumbnail-by-evlsound-djn7rut.png) center / cover !important;
+            filter: brightness(190%) contrast(120%);
+        }
+
+        &::after {
+            mask: radial-gradient(25% 25%, transparent, red) !important;
+            backdrop-filter: sepia(20%) brightness(40%);
+        }
+
+        /* Present 4 */
+        /* &::before {
+            background: url(https://i.ibb.co/p6Pkv26t/b3.png) center / cover !important;
+            filter: brightness(120%) contrast(100%);
+        }
+
+        &::after {
+            mask: radial-gradient(40% 55%, transparent, red) !important;
+            backdrop-filter: sepia(20%) brightness(50%) blur(3px);
+        } */
+
+        /* Custom Present */
+        /* &::before {
+            background: url("") center / cover !important;
+            filter: brightness() contrast();
+        }
+
+        &::after {
+            mask: radial-gradient(40% 55%, transparent, red) !important;
+            backdrop-filter: sepia() brightness() blur();
+        } */
+    }
 }
 
 .appAsidePanelWrapper_a3002d {
@@ -26,8 +85,8 @@
         position: absolute;
         content: "";
         inset: 0;
-        background: var(--background-image) center / 40% !important;
-        filter: brightness(80%) contrast(60%);
+        background: var(--background-image) !important;
+        filter: brightness(80%) contrast(110%);
         opacity: 1;
         z-index: -2;
     }
@@ -37,9 +96,9 @@
         content: "";
         inset: 0;
         /* background: -webkit-radial-gradient(circle, transparent 15%, rgb(14, 10, 14)) !important; */
-        mask: radial-gradient(35% 25%, transparent, red) !important;
+        mask: radial-gradient(25% 25%, transparent, red) !important;
         opacity: 1;
-        backdrop-filter: blur(2px) sepia(20%) brightness(50%);
+        backdrop-filter: sepia(20%) brightness(50%);
         z-index: -1;
     }
 }
@@ -1155,6 +1214,7 @@ body::after {
 .pictureInPicture__6341f .pictureInPictureWindow__6341f {
     box-shadow: 0 0 20px black;
     backdrop-filter: blur(10px);
+    cursor: pointer;
 }
 
 .pictureInPictureVideo_e4cb9a {
