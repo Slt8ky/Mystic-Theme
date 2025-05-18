@@ -32,16 +32,77 @@ or
 Go to Discord > Settings > theme > enable theme.css
 
 ## Additonal & Theme Customization:
+> Comment and uncomment base on what you need in Present sections, there are already provided few wallpaper and filter, if you wanna use custom wallpaper comment the current present and uncomment the custom present and configure the parmater.
+
 ```css
 :root {
-    --background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0c7b2fab-3e79-4723-8407-219ee0f2640c/dji6nkg-91ba2262-fae5-4b50-8bcd-c983187d68cf.jpg/v1/fill/w_1192,h_670,q_70,strp/ayla___old_car_jdm_by_tiotork_dji6nkg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMGM3YjJmYWItM2U3OS00NzIzLTg0MDctMjE5ZWUwZjI2NDBjXC9kamk2bmtnLTkxYmEyMjYyLWZhZTUtNGI1MC04YmNkLWM5ODMxODdkNjhjZi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.aNoag6iWqR5wgvUhq8Wwzh71K39lV9mp9S2rNc1SHoQ");
-	--loadinglogo: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png);    
+    --background-image: "";
+	--loading-image: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png);    
 	--main: rgb(19, 12, 18);
     --border: rgb(91, 91, 91);
     --heading: rgba(193, 176, 178, 0.03);
     --text: rgba(47, 35, 37, 0.112);
     --primary: rgb(255, 47, 82);
     --secondary: rgb(144, 102, 165);
-    --loadintime: 6s;
+    --loadintime: 0s;
+
+    .appAsidePanelWrapper_a3002d {
+        position: relative;
+
+        /* Present 1 */
+        /* &::before {
+            background: url(https://i.ibb.co/JRDVL3mT/PHONK-MIX-FOR-NIGHT-DRIVE-BEST-LXST-CXNTURY-TYPE-3-HOUR-CAR-MUSIC-2025-1-59-3-screenshot.png) center / 40% !important;
+            filter: brightness(60%) contrast(65%);
+        }
+
+        &::after {
+            mask: radial-gradient(25% 25%, transparent, red) !important;
+            backdrop-filter: sepia(20%) brightness(50%);
+        } */
+
+        /* Present 2 */
+        /* &::before {
+            background: url(https://i.ibb.co/TB40hVV0/b1.jpg) center / cover !important;
+            filter: brightness(66%) contrast(130%);
+        }
+
+        &::after {
+            mask: radial-gradient(25% 25%, transparent, red) !important;
+            backdrop-filter: sepia(20%) brightness(30%);
+        } */
+
+        /* Present 3 */
+        &::before {
+            background: url(https://i.ibb.co/LzbtHG8c/thumbnail-by-evlsound-djn7rut.png) center / cover !important;
+            filter: brightness(190%) contrast(120%);
+        }
+
+        &::after {
+            mask: radial-gradient(25% 25%, transparent, red) !important;
+            backdrop-filter: sepia(20%) brightness(40%);
+        }
+
+        /* Present 4 */
+        /* &::before {
+            background: url(https://i.ibb.co/p6Pkv26t/b3.png) center / cover !important;
+            filter: brightness(120%) contrast(100%);
+        }
+
+        &::after {
+            mask: radial-gradient(40% 55%, transparent, red) !important;
+            backdrop-filter: sepia(20%) brightness(50%) blur(3px);
+        } */
+
+        /* Custom Present */
+        /* &::before {
+            background: url("") center / cover !important;
+            filter: brightness() contrast();
+        }
+
+        &::after {
+            mask: radial-gradient(40% 55%, transparent, red) !important;
+            backdrop-filter: sepia() brightness() blur();
+        } */
+    }
 }
 ```
