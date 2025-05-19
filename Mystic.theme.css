@@ -46,11 +46,11 @@
         /* Present 3 */
         &::before {
             background: url(https://i.ibb.co/5WYkvvFQ/b2.png) center / cover !important;
-            filter: brightness(190%) contrast(120%); }
+            filter: unset; }
 
         &::after {
             mask: radial-gradient(25% 25%, transparent, red) !important;
-            backdrop-filter: sepia(20%) brightness(50%);
+            backdrop-filter: unset;
         }
 
         /* Present 4 */
