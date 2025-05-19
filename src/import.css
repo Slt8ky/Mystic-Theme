@@ -46,7 +46,8 @@
         /* Present 3 */
         &::before {
             background: url(https://i.ibb.co/5WYkvvFQ/b2.png) center / cover !important;
-            filter: brightness(190%) contrast(120%); }
+            filter: brightness(190%) contrast(120%); 
+        }
 
         &::after {
             mask: radial-gradient(25% 25%, transparent, red) !important;
@@ -67,12 +68,12 @@
         /* Custom Present */
         /* &::before {
             background: url("") center / cover !important;
-            filter: brightness() contrast();
+            filter: unset;
         }
 
         &::after {
             mask: radial-gradient(40% 55%, transparent, red) !important;
-            backdrop-filter: sepia() brightness() blur(3px);
+            backdrop-filter: unset;
         } */
     }
 }
