@@ -1,15 +1,8 @@
-/**
- * @name Mystic-theme
- * @author Slt8ky
- * @description Mystic-theme
- * @version 0.0.1
- */
-
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
     --background-image: "";
-	--loading-image: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png);    
+	--loading-image: url(https://i.pinimg.com/1200x/07/02/06/0702067fc6e3207de2aa6203144befd5.jpg);    
 	--main: rgb(19, 12, 18);
     --border: rgb(91, 91, 91);
     --heading: rgba(193, 176, 178, 0.03);
@@ -112,6 +105,109 @@
 
 foreignObject {
     mask: none;
+}
+
+body {
+    background: radial-gradient(70% 70%, rgb(34, 2, 17), rgb(11, 0, 6)) !important;
+    position: relative;
+    &::before, &::after {
+        visibility: hidden;
+        position: absolute;
+    }
+    &::before {
+        top: 50%;
+        left: 50%;
+        transform: translate(calc(-50% - 100px), -50%);
+        width: 200px;
+        height: 200px;
+        background: var(--loading-image) 100% / cover;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.485);
+        border-radius: 20px;
+        content: "";
+        animation: loading-image 1.5s ease-in-out, loading-fadeout var(--loadintime);
+    }
+    &::after {
+        top: calc(50% - 30px);
+        left: calc(50% + 20px);
+        transform: translateY(-50%);
+        width: 200px;
+        border-radius: 20px;
+        content: "Loading Theme";
+        font-size: 20px;
+        line-height: 200px;
+        color: var(--primary);
+        border-radius: 0;
+        text-shadow: 0 0 10px rgb(255, 5, 47);
+        letter-spacing: 5px;
+        text-align: left;   
+        z-index: -1;
+        animation: loading-toright var(--loadintime);
+    }
+    .appMount__51fd7 {
+        position: relative;
+        &::before, &::after {
+            visibility: hidden;
+            position: absolute;
+            top: 50%;
+            left: calc(50% + 20px);
+            transform: translateY(-50%);
+            width: 230px;
+            height: 4px;
+            background: linear-gradient(to right, rgb(255, 42, 78), rgb(239, 117, 255)) left / 230px;
+            border-radius: 10px;
+            content: "";
+            z-index: -1;
+            animation: loading-toright var(--loadintime), loading-bar 3s;
+        }
+        &::after {
+            filter: blur(10px) contrast(150%);
+        }
+
+        & .appAsidePanelWrapper_a3002d {
+            opacity: 1;
+            animation: loading-fadein calc(var(--loadintime) + 1s) ease-in-out;
+        }
+    }
+}
+
+@keyframes loading-image {
+    from {transform: translate(-50%, -50%);}
+}
+
+@keyframes loading-toright {
+    from {
+        visibility: visible;
+        opacity: 0;
+        transform: translate(-100px, -50%);
+    }
+    50%, 80% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes loading-bar {
+    from, 30% {
+        width: 0;
+    }
+}
+
+@keyframes loading-fadein {
+    from, 70% {
+        opacity: 0;
+    }
+}
+
+@keyframes loading-fadeout {
+    from, 80% {
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .wrapper__44b0c {
@@ -795,23 +891,6 @@ foreignObject {
 .item__58105 {
     background: var(--primary) !important;
 }
-@keyframes moveY {
-    from {
-        transform: translateY(var(--moveY));
-    }
-}
-
-@keyframes moveX {
-    from {
-        transform: translateX(var(--moveX));
-    }
-}
-
-@keyframes fade-in {
-    0%, 60% {
-        opacity: 0;
-    }
-}
 
 /* loading */
 body {
@@ -819,40 +898,7 @@ body {
     animation: load-in;
 }
 
-body::before, body::after {
-    visibility: hidden;
-}
 
-body::before, body::after {
-    position: absolute;
-}
-
-body::before {
-    inset: 0;
-    background: -webkit-radial-gradient(circle, rgb(26, 18, 29), rgb(12, 8, 11)) !important;
-    z-index: 150;
-    content: "";
-    animation: load-fade var(--loadintime);
-}
-
-body::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    background: var(--loading-image) center no-repeat !important;
-    transform: translate(-50%, -100%);
-    z-index: 151;
-    content: "Loading Theme";
-    text-align: center;
-    line-height: 800px;
-    letter-spacing: 5px;
-    font-size: 24px;
-    color: var(--primary);
-    text-shadow: 0 0 10px currentColor;
-    animation: load-fade var(--loadintime), load-animation 2s ease infinite;
-}
 
 .channelInfo_c69b6d {
     margin: 0 !important;
@@ -885,32 +931,6 @@ body::after {
 
 .total__260e1::after {
     display: none;
-}
-
-@keyframes load-fade {
-    0%, 30% {
-        visibility: visible;
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {    
-        opacity: 0;
-    }
-}
-
-
-@keyframes load-animation {
-    0%, 30% {
-        transform: translate(-50%, -60%);
-    }
-    50% {
-        transform: translate(-50%, -100%);
-    }
-    70%, 100% {
-        transform: translate(-50%, -60%);
-    }
 }
 
 .tooltipPrimary__382e7, .vc-notification {
@@ -989,15 +1009,6 @@ body::after {
 
 .show_c38106 {
         position: absolute;
-}
-
-@keyframes gradientTextAnimation {
-	from {
-		background-position: 0%;
-	}
-    to {
-        background-position: -200%;
-    }
 }
 
 .blockquoteContainer__75297 {
@@ -1287,5 +1298,32 @@ body::after {
     }
     .unicodeShortcut_b9ee0c svg {
         display: none;
+    }
+}
+
+@keyframes gradientTextAnimation {
+	from {
+		background-position: 0%;
+	}
+    to {
+        background-position: -200%;
+    }
+}
+
+@keyframes moveY {
+    from {
+        transform: translateY(var(--moveY));
+    }
+}
+
+@keyframes moveX {
+    from {
+        transform: translateX(var(--moveX));
+    }
+}
+
+@keyframes fade-in {
+    0%, 60% {
+        opacity: 0;
     }
 }
