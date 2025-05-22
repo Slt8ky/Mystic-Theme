@@ -9,7 +9,7 @@
 
 :root {
     --background-image: "";
-	--loading-image: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png);    
+	--loading-image: url(https://i.pinimg.com/1200x/07/02/06/0702067fc6e3207de2aa6203144befd5.jpg);    
 	--main: rgb(19, 12, 18);
     --border: rgb(91, 91, 91);
     --heading: rgba(193, 176, 178, 0.03);
@@ -46,11 +46,12 @@
         /* Present 3 */
         &::before {
             background: url(https://i.ibb.co/5WYkvvFQ/b2.png) center / cover !important;
-            filter: unset; }
+            filter: brightness(190%) contrast(120%); 
+        }
 
         &::after {
             mask: radial-gradient(25% 25%, transparent, red) !important;
-            backdrop-filter: unset;
+            backdrop-filter: sepia(20%) brightness(50%);
         }
 
         /* Present 4 */
@@ -67,12 +68,12 @@
         /* Custom Present */
         /* &::before {
             background: url("") center / cover !important;
-            filter: brightness() contrast();
+            filter: unset;
         }
 
         &::after {
             mask: radial-gradient(40% 55%, transparent, red) !important;
-            backdrop-filter: sepia() brightness() blur(3px);
+            backdrop-filter: unset;
         } */
     }
 }
