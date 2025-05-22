@@ -37,14 +37,14 @@ Go to Discord > Settings > theme > enable theme.css
 ```css
 :root {
     --background-image: "";
-	--loading-image: url(https://i.ibb.co/WvMrbWRK/Waifu-PNG-Image.png);    
+	--loading-image: url(https://i.pinimg.com/1200x/07/02/06/0702067fc6e3207de2aa6203144befd5.jpg);    
 	--main: rgb(19, 12, 18);
     --border: rgb(91, 91, 91);
     --heading: rgba(193, 176, 178, 0.03);
     --text: rgba(47, 35, 37, 0.112);
     --primary: rgb(255, 47, 82);
     --secondary: rgb(144, 102, 165);
-    --loadintime: 0s;
+    --loadintime: 4s;
 
     .appAsidePanelWrapper_a3002d {
         position: relative;
@@ -62,7 +62,7 @@ Go to Discord > Settings > theme > enable theme.css
 
         /* Present 2 */
         /* &::before {
-            background: url(https://i.ibb.co/TB40hVV0/b1.jpg) center / cover !important;
+            background: url(https://i.ibb.co/39H6vh3n/b1.jpg) center / cover !important;
             filter: brightness(66%) contrast(130%);
         }
 
@@ -73,18 +73,18 @@ Go to Discord > Settings > theme > enable theme.css
 
         /* Present 3 */
         &::before {
-            background: url(https://i.ibb.co/LzbtHG8c/thumbnail-by-evlsound-djn7rut.png) center / cover !important;
-            filter: brightness(190%) contrast(120%);
+            background: url(https://i.ibb.co/5WYkvvFQ/b2.png) center / cover !important;
+            filter: brightness(190%) contrast(120%); 
         }
 
         &::after {
             mask: radial-gradient(25% 25%, transparent, red) !important;
-            backdrop-filter: sepia(20%) brightness(40%);
+            backdrop-filter: sepia(20%) brightness(50%);
         }
 
         /* Present 4 */
         /* &::before {
-            background: url(https://i.ibb.co/p6Pkv26t/b3.png) center / cover !important;
+            background: url(https://i.ibb.co/Z1vkXjvV/b3.png) center / cover !important;
             filter: brightness(120%) contrast(100%);
         }
 
@@ -96,12 +96,12 @@ Go to Discord > Settings > theme > enable theme.css
         /* Custom Present */
         /* &::before {
             background: url("") center / cover !important;
-            filter: brightness() contrast();
+            filter: unset;
         }
 
         &::after {
             mask: radial-gradient(40% 55%, transparent, red) !important;
-            backdrop-filter: sepia() brightness() blur();
+            backdrop-filter: unset;
         } */
     }
 }
