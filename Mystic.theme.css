@@ -34,7 +34,7 @@
 
         /* Present 2 */
         /* &::before {
-            background: url(https://i.ibb.co/39H6vh3n/b1.jpg) center / cover !important;
+            background: url(https://github.com/Slt8ky/Mystic-Theme/blob/main/src/b1.png) center / cover !important;
             filter: brightness(66%) contrast(130%);
         }
 
@@ -45,7 +45,7 @@
 
         /* Present 3 */
         &::before {
-            background: url(https://i.ibb.co/5WYkvvFQ/b2.png) center / cover !important;
+            background: url(https://raw.githubusercontent.com/Slt8ky/Mystic-Theme/refs/heads/main/src/b2.png) center / cover !important;
             filter: brightness(190%) contrast(120%); 
         }
 
@@ -56,7 +56,7 @@
 
         /* Present 4 */
         /* &::before {
-            background: url(https://i.ibb.co/Z1vkXjvV/b3.png) center / cover !important;
+            background: url(https://github.com/Slt8ky/Mystic-Theme/blob/main/src/b3.png) center / cover !important;
             filter: brightness(120%) contrast(100%);
         }
 
